@@ -22,4 +22,5 @@ class Baralho:
         return self._cartas[posição]
 
 
-deck = Baralho()
+baralho = Baralho()
+

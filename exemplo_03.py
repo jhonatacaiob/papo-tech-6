@@ -36,5 +36,8 @@ class Baralho:
     def __setitem__(self, posição, carta):
         self._cartas[posição] = carta
 
+    def __repr__(self) -> str:
+        return ',\n'.join([f'{i.valor}-{i.naipe}' for i in self._cartas])
 
-deck = Baralho()
+baralho = Baralho()
+

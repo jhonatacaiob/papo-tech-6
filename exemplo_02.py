@@ -33,5 +33,4 @@ class Baralho:
         print('agora contains')
         return item in self._cartas
 
-
-deck = Baralho()
+baralho = Baralho()
