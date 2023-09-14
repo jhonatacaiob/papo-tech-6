@@ -4,9 +4,9 @@ import collections
 naipes = dict(espadas=3, ouros=2, paus=1, copas=0)
 
 
-def ordenar_baralho(card):
-    valor_carta = Baralho.ranks.index(card.rank)
-    return valor_carta * len(naipes) + naipes[card.suit]
+def ordenar_baralho(carta):
+    valor_carta = Baralho.valores.index(carta.valor)
+    return valor_carta * len(naipes) + naipes[carta.naipe]
 
 
 Carta = collections.namedtuple('Carta', ['valor', 'naipe'])
